@@ -1,1 +1,318 @@
-/* место для вашего кода */
+.header{
+  display: flex;
+  align-items: center;
+  width: 1052px;
+  margin: 92px 24px 96px 24px;
+}
+.nav{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.13px;
+  letter-spacing: 0.01em;
+}
+.header__nav-list{
+  display: flex;
+  width: 391px;
+  margin: 0 40px 0 26px;
+  list-style: circle;
+}
+.nav__list .nav__list-item:first-child{
+  list-style: none;
+}
+.header__nav-list-item:nth-child(2n){
+  margin: 0 31px;
+}
+.nav__list-link{
+  border-bottom: solid 1px black;
+  text-decoration: none;
+}
+.nav__list-item:first-child .nav__list-link:first-child{
+  border-bottom: none;
+}
+.header__logo-image{
+  width: 148px;
+  height: 105px;
+}
+.company-info{
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  list-style: none;
+}
+.company-info__link{
+  border-bottom: solid 1px black;
+  text-decoration: none;
+}
+.company-info__address{
+  width: 237px;
+}
+.header__company-info-list{
+  margin:  0 25px 0 191px;
+}
+.cover{
+  position: relative;
+  z-index: -1;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cover::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cover__title{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 0 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.cover__title-frist-word{
+  width:316px;
+}
+.cover__title-frist-word-indent{
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+  letter-spacing: 0.6em;
+}
+.cover__title-second-word{
+  align-self: center;
+  margin: 12px 0 14px 0;
+}
+.cover__title-second-word-indent{
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+  letter-spacing: 0.6em;
+}
+.cover__title-third-word{
+  align-self: end;
+  width: 417px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 0.6em;
+}
+.cover__title-third-word-indent{
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+} 
+.cover__description{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 134px 0 0px 0;
+  padding: 0 0 51px 0;
+  color: white;
+}
+.cover__description-text{
+  width: 637px;
+  margin-left: 78px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.cover__description-text .cover__description-text-indent:nth-child(1){
+  letter-spacing: 0.9em;
+}
+.cover__description-text .cover__description-text-indent:nth-child(2){
+  letter-spacing: 0.8em;
+}
+.cover__description-text .cover__description-text-indent:nth-child(3){
+  letter-spacing: 1.1em;
+}
+.cover__description-text .cover__description-text-indent:nth-child(4){
+  letter-spacing: 1em;
+}
+.cover__description-text .cover__description-text-indent:nth-child(5){
+  letter-spacing: 1.19em;
+}
+.cover__description-text .cover__description-text-indent:nth-child(6){
+  letter-spacing: 0.8em;
+}
+.bet-button{
+  width: 256px;
+  margin: 0 50px 0px 79px;
+  border: solid 1px white;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+.bet-button__text{
+  width: 193px;
+  margin: 11px 0px 11px 30px;
+  display: block;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25.83px;
+  text-transform: uppercase;
+}
+.lots{
+  margin: 179px 24px 184px 24px;
+  width: 1052px;
+}
+.lots__title{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  margin:0px 0 27px 40px;
+  text-transform: uppercase;
+}
+.cards-list{
+  display: flex;
+  margin: 0 0 32px 0;
+}
+.cards-list:nth-child(2n){
+  column-gap: 25px;
+}
+.card{
+  position: relative;
+  width: 334px;
+  height: 563px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.card::after{
+  content: '';
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-background_1{
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-background_2{
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-background_3{
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card__title{
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-decoration: underline;
+  text-underline-offset:3px;
+  text-decoration-thickness:1px;
+  text-transform: uppercase;
+  margin: 51px 40px 0 40px;
+}
+.card__text{
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 40px 48px 40px;
+}
+.lots__more{
+  margin:0px 0 0 40px;
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+}
+.about{
+  display: flex;
+  width: 1052px;
+  margin: 0 24px 180px 24px;
+}
+.about__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius:50% ;
+  margin: 0 72px 0 47px;
+}
+.about__logo-image{
+  width: 141px;
+  height: 112px;
+}
+.about__title{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  margin: 101px 0 100px 0;
+  text-transform: uppercase;
+}
+.about__text{
+  margin: 0 24px 0 0;
+  width: 693px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+.about__text:last-child{
+  margin: 24px 0 0 0;
+}
+.about__text-indent:nth-child(1){
+  letter-spacing: -0.05em;
+}
+.about__text-indent:nth-child(2){
+  letter-spacing: -0.02em;
+}
+.footer{
+  display: flex;
+  width: 1000px;
+  margin: 0 50px 88px 50px;
+  justify-content: space-between;
+}
+.footer__nav{
+  text-align: center;
+}
+.footer__nav-list{
+  list-style: none;
+}
+.social{
+  display: flex;
+  list-style: none;
+}
+.social__item:nth-child(2n){
+  margin: 0 48px;
+}
+.social__item{
+  width: 48px;
+  height: 48px;
+}
