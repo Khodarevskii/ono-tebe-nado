@@ -59,8 +59,7 @@
   background-position: center;
   background-size: cover;
 }
-.cover__filter {
-  content: '';
+.overlay {
   position: absolute;
   top: 0;
   z-index: 0;
@@ -159,7 +158,7 @@
   list-style: none;
 }
 .cards-list:nth-child(2n) {
-  column-gap: 25px;
+  gap: 25px;
 }
 .card {
   position: relative; 
@@ -173,15 +172,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 .card-film {
   background-image: url(../images/card-lot-01.jpg);
